@@ -6,75 +6,78 @@
     <title>Landing Page</title>  
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="top">
         <div class="header-logo">
             Gabriel Hughes
         </div>
         <div class="header-links">
             <ul>
-                <li><a href="#">Who am I?</a></li>
-                <li><a href="#">What do I do?</a></li>
-                <li><a href="#">Get in touch</a></li>
+                <li><a href="#who-am-I">Who am I?</a></li>
+                <li><a href="#what-I-do">What do I do?</a></li>
+                <li><a href="#rock-paper-scissors">Get in touch</a></li>
             </ul>
         </div>
     </div>
-    <div class="body">
-        <div class="block-one">
+    <div class="container">
+        <div class="block-one" id="who-am-I">
             <div class="block-one-left">
-                <div class="block-one-header">
+                <h1 class="block-one-header" id="who-am-I">
                 Who am I?
-                </div>   
+                </h1>   
                 <div class="block-one-sub">
                 My name is Gabriel, and I am an aspiring full-stack developer. I'm currently studying 'Datatekniker med speciale i programmering' at Mercantec in Viborg.
                 </div>
             </div> 
             <div class="block-one-right">
                 <div class="pic">
-                    <img id="guy-playing-guitar" src="/Personal-landing-page/images/cafe-pic.jpg">
+                    <img id="cafe-pic" src="/Personal-landing-page/images/cafe-pic.jpg">
                 </div>
             </div>
         </div>
         <div class="block-two">
-            <div class="block-two-header">
+            <div class="block-two-header" id="what-I-do">
                 What do I do?
             </div>
         </div>
         <div class="block-three">
             <div class="row">
                 <div class="box-and-caption">
-                    <div class="box"></div>
-                    <span class="caption">Example one!</span>
+                    <div class="box">
+                        <img id="etch-a-sketch" src="/Personal-landing-page/images/sketch-screenshot.png">
+                    </div>
+                    <span class="caption"> <a href="https://monotonalmusic.github.io/etch-a-sketch-project/" class="examples">Etch-a-sketch webapp</a></span>
                 </div>
                 <div class="box-and-caption">
-                    <div class="box"></div>
-                    <span class="caption">Example two!</span>
+                    <div class="box">
+                        <img id="cookie-clicker" src="/Personal-landing-page/images/Cookie-clicker-screenshot.png">
+                    </div>
+                    <span class="caption"> <a href="https://monotonalmusic.github.io/clicker-project/" class="examples">Cookie clicker webapp</a></span>
                  </div>
             </div>
             <div class="row">
                 <div class="box-and-caption">
-                    <div class="box"></div>
-                    <span class="caption">Example three!</span>
+                    <div class="box">
+                        <img id="rock-paper-scissors" src="/Personal-landing-page/images/Rock-paper-scissors.png">
+                    </div>
+                    <span class="caption"> <a href="https://monotonalmusic.github.io/rock-paper-scissors/" class="examples">Rock/Paper/Scissors webapp</a></span>
                 </div>
-                <div class="box-and-caption">
+                <!-- <div class="box-and-caption">
                     <div class="box"></div>
-                    <span class="caption">Example four!</span>
+                    <span class="caption">Example four!</span> -->
                 </div>
              </div>
         </div>
-        <div class="block-four">
-            <p>This is some very inspirational stuff, that I am saying right now... let the inspiration flow through you.</p>
-            <p class="quoter">-Sun Tzu</p>
-        </div>
         <div class="block-five">
-            <div class="blue-block">
-                    <p class="blue-text"><b>A call to action!</b> <br> Click that button over there! </p>
-                    <button class="sign-up-2"> Sign up </button>
+            <div class="blue-block" id="get-in-touch">
+                    <p class="blue-text"><b>Want to get in touch?</b> <br> Check for clues.. </p>
+                    <!-- Make button that reveals e-mail and phone number -->
+                    <button class="sign-up-2">gehughes28@gmail.com <br> +45 42 66 77 07 </button>
                 
             </div>
         </div>
     </div>
     <div class="footer">
-        Copyright The Odin Project 2021
+
     </div>
 
 </body></html>
