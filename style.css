@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Pixel;
+    src: url(Pixeboy-z8XGD.ttf);
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,7 +18,7 @@ a {
 }
 
 .examples {
-    color: #654321; 
+    color: black; 
 }
 
 li {
@@ -49,12 +55,15 @@ ul {
     min-width: auto;
 }
 
+#who-am-I {
+    color: black;
+}
 .block-one {
     display: flex;
-    background: #1F2937;
+    background: beige;
     padding: 0 150px;
-    max-height: 300px;
-    height: 300px;
+    max-height: 350px;
+    height: 350px;
     justify-content: space-between;
     
 }
@@ -70,6 +79,10 @@ ul {
     font-size: 24px;
 }
 
+#cafe-pic {
+    margin-top: 60px;
+}
+
 .block-one-sub {
     color: grey;
     width: 400px;
@@ -78,6 +91,9 @@ ul {
 img {
     height: 200px;
     width: auto;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 #etch-a-sketch {
@@ -125,6 +141,7 @@ button:hover::before {
     left: -100%;
 }
 .block-two {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -138,14 +155,14 @@ button:hover::before {
 
 }
 
-.box {
+/* .box {
     border: solid 3px green;
     border-radius: 15px;
     padding: 15px;
     margin: 0;
     height: 300px;
     width: 400px;
-}
+} */
 
 .block-three {
     display: flex;
@@ -166,6 +183,11 @@ button:hover::before {
     margin-bottom: 40px;
 }
 
+.caption {
+    font-family: Pixel;
+    font-size: 25px;
+}
+
 .row {
     display: flex;
 
@@ -173,14 +195,28 @@ button:hover::before {
 
 .block-four {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     background-color: lightgrey;
     height: 300px;
     color: black;
-    align-items: center;
-    justify-content: center;
     padding-left: 150px;
     padding-right: 150px;
+}
+
+.four-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65%;
+}
+
+.four-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .quoter {
@@ -199,6 +235,8 @@ button:hover::before {
     flex-flow: row ;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
     background-color: green;
     border-radius: 15px;
     color: whitesmoke;
