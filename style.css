@@ -26,7 +26,7 @@ li {
 
 }
 
-ul {
+.header-list {
     display: flex;
     justify-content: space-between;
     gap: 16px;
@@ -111,6 +111,16 @@ img {
     width: 400px;
 }
 
+#CV {
+    filter:blur(5px);
+    transition: 0.3s ease-in-out;
+}
+
+#CV:hover {
+    filter: blur(0px);
+}
+
+
 button {
     position: absolute;
     right: 150px;
@@ -118,7 +128,6 @@ button {
     color: white;
     border-radius: 12px;
     outline: none;
-    border: 2px solid whitesmoke;
     padding: 5px;
     height: 75px;
     width: 175px;
@@ -197,7 +206,7 @@ button:hover::before {
     display: flex;
     justify-content: space-between;
     background-color: lightgrey;
-    height: 300px;
+    height: 400px;
     color: black;
     padding-left: 150px;
     padding-right: 150px;
@@ -206,9 +215,11 @@ button:hover::before {
 .four-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     width: 65%;
+}
+
+.bullet {
+    list-style: disc;
 }
 
 .four-right {
@@ -247,6 +258,7 @@ button:hover::before {
     width: 800px;
     height: 100px;  
 }
+
 
 .footer {
     /* display: flex;
