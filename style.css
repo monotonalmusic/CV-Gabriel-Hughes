@@ -3,7 +3,9 @@
     src: url(Pixeboy-z8XGD.ttf);
 }
 
-
+html {
+    font-size: 10px;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -31,30 +33,31 @@ li {
 }
 
 .header-list {
+    font-size: large;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: 1.6rem;
 }
 .header {
     display: flex;
     flex: 1;
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 0rem;
     background-color: #1F2937;
-    padding: 0 150px;
+    padding: 0 15rem;
     justify-content: space-between;
     align-items: center;
-    max-height: 100px;
-    min-height: 100px;
-    height: 100px;
+    max-height: 10rem;
+    min-height: 10rem;
+    height: 10rem;
     z-index: 99999;
 }
 
 
 .header-logo {
     color: whitesmoke;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 900;
     min-width: auto;
 }
@@ -65,9 +68,9 @@ li {
 .block-one {
     display: flex;
     background: beige;
-    padding: 0 150px;
-    max-height: 350px;
-    height: 350px;
+    padding: 0 15rem;
+    max-height: 35rem;
+    height: 35rem;
     justify-content: space-between;
     
 }
@@ -75,68 +78,69 @@ li {
 .block-one-left {
     display: flex;
     flex-flow: column ;
-    gap: 50px;
+    gap: 5rem;
 }
 
 .block-one-header {
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 #cafe-pic {
-    margin-top: 60px;
+    margin-top: 6rem;
 }
 
 .block-one-sub {
+    font-size: 1.9rem;
     color: grey;
-    width: 400px;
+    width: 40rem;
 }
 
 img {
-    height: 200px;
+    height: 20rem;
     width: auto;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin: 0;
     font-size: 2.5rem;
 }
 
 #etch-a-sketch {
-    height: 300px;
-    width: 400px;
+    height: 30rem;
+    width: 40rem;
 }
 
 #cookie-clicker {
-    height: 300px;
-    width: 400px;
+    height: 30rem;
+    width: 40rem;
 }
 
 #rock-paper-scissors{
-    height: 300px;
-    width: 400px;
+    height: 30rem;
+    width: 45rem;
 }
 
 #CV {
-    height: 400px;
-    filter:blur(3px);
+    height: 40rem;
+    filter:blur(.1rem);
     transition: 0.3s ease-in-out;
 }
 
 #CV:hover {
-    filter: blur(0px);
+    filter: blur(0rem);
 }
 
 
 button {
     position: absolute;
-    right: 150px;
+    right: 15rem;
     background-color: green;
     color: white;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     border-style: none;
     outline: none;
-    padding: 5px;
-    height: 75px;
-    width: 175px;
+    padding: .5rem;
+    height: 7.5rem;
+    width: 17.5rem;
 
 }
 
@@ -148,7 +152,7 @@ button::before {
     content:"Contact Information";
     font-weight: bold;
     background: green;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -160,28 +164,19 @@ button:hover::before {
     left: -100%;
 }
 .block-two {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    max-height: 100px;
+    max-height: 10rem;
 }
 
 .block-two-header {
     font-weight: 900;
-    font-size: 32px;
+    font-size: 3.2rem;
 
 }
-
-/* .box {
-    border: solid 3px green;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 0;
-    height: 300px;
-    width: 400px;
-} */
 
 .block-three {
     display: flex;
@@ -198,13 +193,13 @@ button:hover::before {
     flex-flow: column;
     flex: 1;
     align-items: center;
-    margin: 15px;
-    margin-bottom: 40px;
+    margin: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .caption {
     font-family: Pixel;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .row {
@@ -213,21 +208,32 @@ button:hover::before {
 }
 
 .block-four {
+    font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     background-color: lightgrey;
-    height: 500px;
+    height: 50rem;
     color: black;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
 }
 
 .four-left {
     display: flex;
     flex-direction: column;
     width: 65%;
+    filter: blur(.05rem);
+    transition: 0.5s ease-in-out;
 }
 
+.four-left:hover {
+    filter: none;
+}
+
+.four-left::after {
+    filter: none;
+}
 .bullet {
     list-style: disc;
 }
@@ -235,7 +241,7 @@ button:hover::before {
 .four-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -246,9 +252,10 @@ button:hover::before {
 }
 
 .block-five {
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 10rem;
 }
 
 .blue-block {
@@ -256,29 +263,25 @@ button:hover::before {
     flex-flow: row ;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 20px 20px rgba(0,0,0,.15);
+    box-shadow: 2rem 2rem rgba(0,0,0,.15);
     transition: all .4s ease;
     background-color: green;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     color: whitesmoke;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10rem;
+    padding-right: 10rem;
     margin: auto;
-    border: 10px;
-    width: 800px;
-    height: 100px;  
+    border: 1rem;
+    width: 80rem;
+    height: 10rem;  
 }
 
 
 .footer {
-    /* display: flex;
-    flex-flow: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    color: whitesmoke; */
+    color: whitesmoke;
+    text-align: center;
     background-color: #1F2937;
-    height: 600px;
-    min-height: 50px;
-    padding: 0 150px;
+    height: 60rem;
+    min-height: 5rem;
+    padding: 0 15rem;
 }
