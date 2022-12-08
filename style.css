@@ -28,7 +28,7 @@ li {
 
 }
 
-#scroll-up {
+.header-link {
     color: white;
 }
 
@@ -116,20 +116,12 @@ img {
 
 #rock-paper-scissors{
     height: 30rem;
-    width: 45rem;
+    width: 48rem;
 }
 
 #CV {
-    height: 40rem;
-    filter:blur(.1rem);
-    transition: 0.3s ease-in-out;
+    height: 35rem;
 }
-
-#CV:hover {
-    filter: blur(0rem);
-}
-
-
 button {
     position: absolute;
     right: 15rem;
@@ -244,8 +236,13 @@ button:hover::before {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    height: 40rem;
+    filter:blur(.1rem);
+    transition: 0.3s ease-in-out;
 }
-
+.four-right:hover {
+    filter: blur(0rem);
+}
 .quoter {
     font-weight: 700;
     margin-left: auto;
@@ -281,7 +278,7 @@ button:hover::before {
     color: whitesmoke;
     text-align: center;
     background-color: #1F2937;
-    height: 60rem;
+    height: 24rem;
     min-height: 5rem;
     padding: 0 15rem;
 }
